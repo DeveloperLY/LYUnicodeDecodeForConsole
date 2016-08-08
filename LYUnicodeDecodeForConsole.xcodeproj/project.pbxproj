@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD527F341D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CD527F331D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcscheme */; };
+		CD527F371D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = CD527F361D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD527F2F1D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYUnicodeDecodeForConsole.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD527F331D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = LYUnicodeDecodeForConsole.xcscheme; path = LYUnicodeDecodeForConsole.xcodeproj/xcshareddata/xcschemes/LYUnicodeDecodeForConsole.xcscheme; sourceTree = SOURCE_ROOT; };
+		CD527F351D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUnicodeDecodeForConsole.h; sourceTree = "<group>"; };
+		CD527F361D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUnicodeDecodeForConsole.m; sourceTree = "<group>"; };
+		CD527F381D58C8BF00FFEF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CD527F271D58C8BF00FFEF9B = {
+			isa = PBXGroup;
+			children = (
+				CD527F311D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole */,
+				CD527F301D58C8BF00FFEF9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD527F301D58C8BF00FFEF9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD527F2F1D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD527F311D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole */ = {
+			isa = PBXGroup;
+			children = (
+				CD527F351D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.h */,
+				CD527F361D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.m */,
+				CD527F381D58C8BF00FFEF9B /* Info.plist */,
+				CD527F321D58C8BF00FFEF9B /* Supporting Files */,
+			);
+			path = LYUnicodeDecodeForConsole;
+			sourceTree = "<group>";
+		};
+		CD527F321D58C8BF00FFEF9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD527F331D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD527F2E1D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD527F3B1D58C8BF00FFEF9B /* Build configuration list for PBXNativeTarget "LYUnicodeDecodeForConsole" */;
+			buildPhases = (
+				CD527F2C1D58C8BF00FFEF9B /* Sources */,
+				CD527F2D1D58C8BF00FFEF9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYUnicodeDecodeForConsole;
+			productName = LYUnicodeDecodeForConsole;
+			productReference = CD527F2F1D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD527F281D58C8BF00FFEF9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = GeekYL;
+				TargetAttributes = {
+					CD527F2E1D58C8BF00FFEF9B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CD527F2B1D58C8BF00FFEF9B /* Build configuration list for PBXProject "LYUnicodeDecodeForConsole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD527F271D58C8BF00FFEF9B;
+			productRefGroup = CD527F301D58C8BF00FFEF9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD527F2E1D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD527F2D1D58C8BF00FFEF9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD527F341D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD527F2C1D58C8BF00FFEF9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD527F371D58C8BF00FFEF9B /* LYUnicodeDecodeForConsole.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD527F391D58C8BF00FFEF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD527F3A1D58C8BF00FFEF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD527F3C1D58C8BF00FFEF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = LYUnicodeDecodeForConsole/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderyliu.LYUnicodeDecodeForConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		CD527F3D1D58C8BF00FFEF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = LYUnicodeDecodeForConsole/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderyliu.LYUnicodeDecodeForConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD527F2B1D58C8BF00FFEF9B /* Build configuration list for PBXProject "LYUnicodeDecodeForConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD527F391D58C8BF00FFEF9B /* Debug */,
+				CD527F3A1D58C8BF00FFEF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD527F3B1D58C8BF00FFEF9B /* Build configuration list for PBXNativeTarget "LYUnicodeDecodeForConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD527F3C1D58C8BF00FFEF9B /* Debug */,
+				CD527F3D1D58C8BF00FFEF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD527F281D58C8BF00FFEF9B /* Project object */;
+}
