@@ -26,15 +26,16 @@ static IMP IMP_IDEConsoleItem_initWithAdaptorType = nil;
 
 @implementation LYIDEConsoleItem
 
-- (id)initWithAdaptorType:(id)arg1 content:(id)arg2 kind:(int)arg3 {
+- (id)initWithAdaptorType:(id)arg1 content:(id)arg2 kind:(int)arg3
+{
     id (*execIMP)(id, SEL, id, id, int) = (void *)IMP_IDEConsoleItem_initWithAdaptorType;
     id item = execIMP(self, _cmd, arg1, arg2, arg3);
-    if (isOpenLYUnicodeDecode) {
+    if (isOpenLYUnicodeDecode)
+    {
         NSString *logText = [item valueForKey:@"content"];
         NSString *resultText = [LYUnicodeDecodeForConsole convertUnicode:logText];
         [item setValue:resultText forKey:@"content"];
     }
-    
     return item;
 }
 
@@ -108,51 +109,53 @@ static IMP IMP_IDEConsoleItem_initWithAdaptorType = nil;
 {
     // Create menu items, initialize UI, etc.
     // Sample Menu Item:
-    NSMenu *mainMenu = [NSApp mainMenu];
-    if (!mainMenu) {
-        return NO;
-    }
-    
-    NSMenuItem *pluginsMenuItem = [mainMenu itemWithTitle:@"Plugins"];
-    if (!pluginsMenuItem) {
-        pluginsMenuItem = [[NSMenuItem alloc] init];
-        pluginsMenuItem.title = @"Plugins";
-        pluginsMenuItem.submenu = [[NSMenu alloc] initWithTitle:pluginsMenuItem.title];
-        NSInteger windowIndex = [mainMenu indexOfItemWithTitle:@"Window"];
-        [mainMenu insertItem:pluginsMenuItem atIndex:windowIndex];
-    }
-    if (pluginsMenuItem && !self.unicodeDecodeForConsoleItem) {
+    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
+    if (menuItem)
+    {
+        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
         self.unicodeDecodeForConsoleItem = [[NSMenuItem alloc] initWithTitle:@"LYUnicodeDecodeForConsole" action:@selector(unicodeDecodeItemAction:) keyEquivalent:@""];
-        self.unicodeDecodeForConsoleItem.target = self;
-        [pluginsMenuItem.submenu addItem:self.unicodeDecodeForConsoleItem];
-        
+        //        [self.unicodeDecodeForConsoleItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
+        [self.unicodeDecodeForConsoleItem setTarget:self];
+        [[menuItem submenu] addItem:self.unicodeDecodeForConsoleItem];
         isOpenLYUnicodeDecode = [[NSUserDefaults standardUserDefaults] boolForKey:kUnicodeDecodeForConsoleItemEnableKey];
         isOpenLYUnicodeDecode = YES;
-        if (isOpenLYUnicodeDecode) {
-            self.unicodeDecodeForConsoleItem.state = NSOnState;
-        } else {
+        
+        if (isOpenLYUnicodeDecode)
+        {
             self.unicodeDecodeForConsoleItem.state = NSOnState;
         }
+        else
+        {
+            self.unicodeDecodeForConsoleItem.state = NSOffState;
+        }
+        return YES;
     }
-    
-    return YES;
+    else
+    {
+        return NO;
+    }
 }
 
 // Sample Action, for menu item:
-- (void)unicodeDecodeItemAction:(NSMenuItem *)menuItem {
+- (void)unicodeDecodeItemAction:(NSMenuItem *)menuItem
+{
     BOOL convertInConsoleEnable = [[NSUserDefaults standardUserDefaults] boolForKey:kUnicodeDecodeForConsoleItemEnableKey];
     [[NSUserDefaults standardUserDefaults] setBool:!convertInConsoleEnable forKey:kUnicodeDecodeForConsoleItemEnableKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     isOpenLYUnicodeDecode = !convertInConsoleEnable;
-    if (isOpenLYUnicodeDecode) {
+    if (isOpenLYUnicodeDecode)
+    {
         self.unicodeDecodeForConsoleItem.state = NSOnState;
-    } else {
+    }
+    else
+    {
         self.unicodeDecodeForConsoleItem.state = NSOffState;
     }
 }
 
-+ (NSString*)convertUnicode:(NSString *)content {
++ (NSString*)convertUnicode:(NSString *)content
+{
     NSMutableString *convertedString = [content mutableCopy];
     [convertedString replaceOccurrencesOfString:@"\\U" withString:@"\\u" options:0 range:NSMakeRange(0, convertedString.length)];
     CFStringRef transform = CFSTR("Any-Hex/Java");
